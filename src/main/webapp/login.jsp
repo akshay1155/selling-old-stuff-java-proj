@@ -137,7 +137,7 @@ pageEncoding="UTF-8"%>
             </div>
           </div>
           <hr>
-            <p class="copyright">Copyright 2023-Akshay Reddy</p> 
+            <p class="copyright">Copyright 2023-Akshay Kumar</p> 
         </div>
       </div>
       <!--------------js for toggle form------->
