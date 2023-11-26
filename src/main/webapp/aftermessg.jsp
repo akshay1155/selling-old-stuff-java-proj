@@ -11,7 +11,7 @@
 <body>
 <% 
 Class.forName("com.mysql.cj.jdbc.Driver");
-Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/jsp","root","root");
+Connection con=DriverManager.getConnection("jdbc:mysql://db:3306/jsp","root","root");
 String sid=request.getParameter("unamebuy");
 String n=request.getParameter("messg");
 String m=request.getParameter("unameseller");

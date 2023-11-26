@@ -7,7 +7,7 @@ import java.sql.ResultSet;
 
 public class LoginDao {
 
-	String url="jdbc:mysql://localhost:3306/jsp";
+	String url="jdbc:mysql://db:3306/jsp";
 	String sql="select * from login where uname=? and pass=?";
 	public boolean check(String uname, String pass) {
 		try {

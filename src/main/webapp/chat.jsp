@@ -69,7 +69,7 @@ String sname=request.getParameter("sname");
           <div class="col-2">
           <%
             Class.forName("com.mysql.jdbc.Driver");
-			Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/jsp","root","root");
+			Connection con=DriverManager.getConnection("jdbc:mysql://db:3306/jsp","root","root");
 			Statement st=con.createStatement();
 			ResultSet rs=st.executeQuery("select distinct uname from "+uname+" ");
 			%>
@@ -93,7 +93,7 @@ String sname=request.getParameter("sname");
            <div style="width:600px;height:auto;border:1px solid #000;">
             <%
             Class.forName("com.mysql.cj.jdbc.Driver");
-			Connection conc=DriverManager.getConnection("jdbc:mysql://localhost:3306/jsp","root","root");
+			Connection conc=DriverManager.getConnection("jdbc:mysql://db:3306/jsp","root","root");
 			Statement stat=conc.createStatement();
 			ResultSet ps=stat.executeQuery("select * from "+uname+" where uname='"+sname+"' ");
 			%>

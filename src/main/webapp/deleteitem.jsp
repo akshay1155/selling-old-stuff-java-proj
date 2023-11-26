@@ -19,7 +19,7 @@
 <body style="background:#e6ffff">
 <% 
 Class.forName("com.mysql.cj.jdbc.Driver");
-Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/jsp","root","root");
+Connection con=DriverManager.getConnection("jdbc:mysql://db:3306/jsp","root","root");
 String id=request.getParameter("sid");
 System.out.println("sid value is :"+id);
 PreparedStatement ps=con.prepareStatement("delete from seller where sid=?");

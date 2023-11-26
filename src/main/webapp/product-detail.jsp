@@ -57,7 +57,7 @@ pageEncoding="UTF-8"%>
 						String id=request.getParameter("sid");
 						
 						Class.forName("com.mysql.jdbc.Driver");
-						Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/jsp","root","root");
+						Connection con=DriverManager.getConnection("jdbc:mysql://db:3306/jsp","root","root");
 						Statement st=con.createStatement();
 						ResultSet rs=st.executeQuery("select * from seller where sid='"+id+"' ");
 						rs.next();

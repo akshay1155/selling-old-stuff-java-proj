@@ -8,7 +8,7 @@ import java.sql.ResultSet;
 import com.login.*;
 public class RegisterDao {
 	
-	private String url="jdbc:mysql://localhost:3306/jsp";
+	private String url="jdbc:mysql://db:3306/jsp";
 	private String sql="insert into login values(?,?,?,?)";
 	String result="Data entered successfully";
 	int rs=0;

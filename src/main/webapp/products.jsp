@@ -115,14 +115,14 @@ String sql="select * from seller";
 String search=(String)request.getParameter("search");
 if(search!=null){
 	Class.forName("com.mysql.cj.jdbc.Driver");
-	con=DriverManager.getConnection("jdbc:mysql://localhost:3306/jsp","root","root");
+	con=DriverManager.getConnection("jdbc:mysql://db:3306/jsp","root","root");
 	Statement st=con.createStatement();
     rs=st.executeQuery("select * from seller where lower(category)='"+search+"'");
 	
 }
 else{
 	Class.forName("com.mysql.cj.jdbc.Driver");
-	con=DriverManager.getConnection("jdbc:mysql://localhost:3306/jsp","root","root");
+	con=DriverManager.getConnection("jdbc:mysql://db:3306/jsp","root","root");
 	Statement st=con.createStatement();
 	rs=st.executeQuery("select * from seller ");
 }

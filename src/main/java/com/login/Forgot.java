@@ -19,7 +19,7 @@ public class Forgot extends HttpServlet {
 		String phone=request.getParameter("phone");
 		try {
 			Class.forName("com.mysql.cj.jdbc.Driver");
-			Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/jsp","root","root");
+			Connection con=DriverManager.getConnection("jdbc:mysql://db:3306/jsp","root","root");
 			PreparedStatement ps=con.prepareStatement("select * from login where uname=? and email=? and phone=? ");
 			ps.setString(1,uname);
 			ps.setString(2,email);

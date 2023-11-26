@@ -8,7 +8,7 @@ import com.login.Member;
 
 public class SellerRegisterdao {
 
-	public String url="jdbc:mysql://localhost:3306/jsp";
+	public String url="jdbc:mysql://db:3306/jsp";
 	public String sql="insert into seller(sname,uname,email,category,brand,phone,discription,location,price,gender,imageFileName) values(?,?,?,?,?,?,?,?,?,?,?)";
 	String result="Data entered successfully";
 	int rs=0;
