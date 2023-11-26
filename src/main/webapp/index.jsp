@@ -79,7 +79,7 @@ pageEncoding="UTF-8"%>
  <h2 class="title">Products For sale</h2>
  <%
 Class.forName("com.mysql.cj.jdbc.Driver");
-Connection con=DriverManager.getConnection("jdbc:db://localhost:3306/jsp","root","root");
+Connection con=DriverManager.getConnection("jdbc:mysql://db:3306/jsp","root","root");
 Statement st=con.createStatement();
 ResultSet rs=st.executeQuery("select * from seller ");
 %>
