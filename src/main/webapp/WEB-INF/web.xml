@@ -8,7 +8,7 @@
   	<servlet-name>Register</servlet-name>
   	<display-name>Register</display-name>
   	<description></description>
-  	<servlet-class>com.login.dao</servlet-class>
+  	<servlet-class>com.login.dao.Register</servlet-class>
   </servlet>
   <servlet-mapping>
   	<servlet-name>Register</servlet-name>
